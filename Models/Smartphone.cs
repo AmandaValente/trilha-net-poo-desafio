@@ -1,11 +1,12 @@
+
 namespace DesafioPOO.Models
 {
-    public abstract class Smartphone
+    public abstract class Smartphone : ISmartphone
     {
         public string Numero { get; set; }
         private string Modelo;
         private string Imei;
-        private int Memoria;
+        protected int Memoria {get;set;}
 
 
 
@@ -21,14 +22,19 @@ namespace DesafioPOO.Models
 
         public void Ligar()
         {
-            Console.WriteLine("Ligando...");
+            Console.WriteLine($"Ligando para {Numero}");
         }
 
         public void ReceberLigacao()
         {
-            Console.WriteLine("Recebendo ligação...");
+            Console.WriteLine($"Recebendo ligação de {Numero}");
         }
 
-        public abstract void InstalarAplicativo(string nomeApp);
+        public abstract void InstalarAplicativo(string nomeApp , int memoria);
+
+        public void RegistrarVideo()
+        {
+            Console.WriteLine($"Vídeo registrado com sucesso!");
+        }
     }
 }
