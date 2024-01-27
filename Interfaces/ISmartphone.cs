@@ -7,6 +7,6 @@ namespace DesafioPOO.Models
 {
     public interface ISmartphone
     {
-        void RegistrarVideo();
+        string RegistrarVideo(int memoria);
     }
 }

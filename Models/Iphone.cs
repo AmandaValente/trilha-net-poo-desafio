@@ -8,9 +8,9 @@ namespace DesafioPOO.Models
         }
 
 
-        public override void InstalarAplicativo(string nomeApp, int memoria)
+        public override string InstalarAplicativo(string nomeApp, int memoria)
         {
-            Console.WriteLine($"o aplicativo que está sendo instalado é {nomeApp}");
+            return "o aplicativo que está sendo instalado é "+ nomeApp;
         }
     }
 }

@@ -2,20 +2,22 @@
 
 
 Nokia c1 = new Nokia(numero: "2345", modelo: "tipo1", imei: "abcs", memoria: 64);
-c1.Ligar();
-c1.InstalarAplicativo("Spotfy", 67);
-c1.ReceberLigacao();
-c1.RegistrarVideo();
-c1.TraduzirTexto();
+Console.WriteLine(c1.Ligar("2345"));
+Console.WriteLine(c1.InstalarAplicativo("Spotfy", 67));
+Console.WriteLine(c1.ReceberLigacao("988882222"));
+Console.WriteLine(c1.RegistrarVideo(12));
+Console.WriteLine(c1.ApresentarMemoria(14));
+
+
 
 
 
 
 Iphone c2 = new Iphone(numero: "56748", modelo: "tipo3", imei: "gdhgf", memoria: 128);
-c2.Ligar();
-c2.ReceberLigacao();
-c2.InstalarAplicativo("Instagram", 34);
-c2.RegistrarVideo();
+Console.WriteLine(c2.Ligar("56748"));
+Console.WriteLine(c2.ReceberLigacao("667809"));
+Console.WriteLine(c2.InstalarAplicativo("Instagram", 34));
+Console.WriteLine(c2.RegistrarVideo(6));
 
 
 

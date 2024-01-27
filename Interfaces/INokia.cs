@@ -7,6 +7,6 @@ namespace DesafioPOO.Models
 {
     public interface INokia
     {
-        void TraduzirTexto();
+        string ApresentarMemoria(int memoria);
     }
 }

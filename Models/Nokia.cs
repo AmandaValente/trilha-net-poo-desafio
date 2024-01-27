@@ -8,15 +8,14 @@ namespace DesafioPOO.Models
         {
 
         }
-        public override void InstalarAplicativo(string nomeApp, int memoria)
+        public override string InstalarAplicativo(string nomeApp, int memoria)
         {
-            Console.WriteLine($"o aplicativo que está sendo instalado no Nokia é {nomeApp} ocupando {memoria} MB");
+            return "o aplicativo que está sendo instalado no Nokia é " + nomeApp + " ocupando " + memoria + " MB";
         }
 
-        public void TraduzirTexto()
+        public string ApresentarMemoria(int memoria)
         {
-            Console.WriteLine("Texto tradudizo");
+            return "Memoria com " + memoria + "MB ocupada.";
         }
-
     }
 }

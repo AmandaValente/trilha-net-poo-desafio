@@ -6,8 +6,7 @@ namespace DesafioPOO.Models
         public string Numero { get; set; }
         private string Modelo;
         private string Imei;
-        protected int Memoria {get;set;}
-
+        protected int Memoria { get; set; }
 
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
@@ -18,23 +17,25 @@ namespace DesafioPOO.Models
             Memoria = memoria;
 
 
+
         }
 
-        public void Ligar()
+        public string Ligar(string numero)
         {
-            Console.WriteLine($"Ligando para {Numero}");
+            return "Ligando para " + numero;
+
         }
 
-        public void ReceberLigacao()
+        public string ReceberLigacao(string numero)
         {
-            Console.WriteLine($"Recebendo ligação de {Numero}");
+            return "Recebendo ligação de " + numero;
         }
 
-        public abstract void InstalarAplicativo(string nomeApp , int memoria);
+        public abstract string InstalarAplicativo(string nomeApp, int memoria);
 
-        public void RegistrarVideo()
+        public string RegistrarVideo(int memoria)
         {
-            Console.WriteLine($"Vídeo registrado com sucesso!");
+            return "Vídeo ocupando " + memoria + " MB";
         }
     }
 }
